@@ -1,0 +1,94 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.nav-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;  /* Increased padding for better edge spacing */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #64ffda;
+  padding-left: 1rem;  /* Added padding from left edge */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;  /* Increased gap between nav items */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #64ffda;
+}
+
+/* Add padding to home to account for fixed navbar */
+.home {
+  padding-top: 80px;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a192f;
+  color: #fff;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  max-width: 50%;  /* Add this line */
+}
+
+.hero-content {
+  max-width: 500px;  /* Reduce from 600px */
+  padding: 0 20px;   /* Add padding */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;    /* Add padding */
+}
+
+.profile-image img {
+  max-width: 70%;   /* Reduce from 80% */
+  max-height: 70vh; /* Reduce from 80vh */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
+  animation: fadeIn 1s ease-in;
+}
